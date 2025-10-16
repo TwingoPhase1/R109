@@ -44,7 +44,6 @@ h1{
 section {
     display: flex;
     border-radius: 14px;
-    margin: 20px;
     margin-left: 30px;
     margin-right: 30px;
     padding: 14px;
@@ -90,6 +89,6 @@ section h2 {
         height: auto;
     }
     section {
-        margin: 10px 0%;
+        margin: 4px 0%;
     }
 }
