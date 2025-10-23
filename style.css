@@ -61,7 +61,7 @@ section {
 
 section h2 {
     padding-left: 8px;
-    color: rgb(42, 42, 42);
+    color: rgb(62, 62, 62);
 }
 #photoid {
     border-radius: 8px;
@@ -74,7 +74,45 @@ section h2 {
     justify-content: center;
     flex-direction: raw;
 }
+#texttext {
+    padding-top:20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: raw;
+    width: 100%;
+}
+.flexconteneurimage {
+    display: flex;
+    flex-direction: row ;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex-direction: raw;
+    border-radius: 15px;
+    margin: 20px 20px ;
+}
+.flexconteneurimageimage{
+    border-radius: 15px ;
+    width: 50%;
+}
 
+@media (min-width: 1000px) {
+    #texttext{
+        flex-wrap: nowrap;
+        flex-direction: row ;
+        grid-template-columns: 1fr 1fr;
+        gap:20px
+    }
+    #texttextright{
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    #texttextleft{
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+}
 @media (max-width: 600px) {
     .alignerimgtxt {
         grid-template-columns: 1fr;
@@ -92,9 +130,14 @@ section h2 {
         height: auto;
     }
     section {
-        margin: 4px 0%;
+        margin-left: 3px;
+        margin-right: 3px;
     }
     .flexconteneur{
-        gap: 4px;
+        gap: 2px;
+    }
+    #texttext{
+        gap: 2px;
+        padding-top: 2px;
     }
 }
